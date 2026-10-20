@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: ogtrophyhusband-web
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 4242
+      - key: NODE_ENV
+        value: production
+      - key: BASE_URL
+        sync: false
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: STRIPE_WEBHOOK_SECRET
+        sync: false
+      - key: PRINTFUL_API_TOKEN
+        sync: false
