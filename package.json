@@ -1,0 +1,30 @@
+{
+  "name": "ogtrophyhusband-custom-ecommerce",
+  "version": "1.0.0",
+  "description": "Self-hosted E-Commerce Website for OG Trophy Husband with Stripe and Printful connectors",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "verify": "node scripts/verify-setup.js"
+  },
+  "keywords": [
+    "printful",
+    "stripe",
+    "ecommerce",
+    "pod",
+    "og-trophy-husband"
+  ],
+  "author": "OG Trophy Husband",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "stripe": "^17.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
