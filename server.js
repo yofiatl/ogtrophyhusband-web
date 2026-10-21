@@ -1,34 +1,4 @@
-/**
- * OG Trophy Husband - Production Express Server
- * 
- * Standalone, self-hosted backend replacing Shopify.
- * Connects directly to:
- * - Stripe (Hosted Checkout + Webhooks)
- * - Printful (REST API POD automated fulfillment)
- */
-require('dotenv').config();
-const express = require('express');
-const cors = require('cors');
-const path = require('path');
-
-const PRODUCTS = require('./config/products');
-const { createCheckoutSession } = require('./connectors/stripe');
-const webhooksRouter = require('./routes/webhooks');
-
-const app = express();
-const PORT = process.env.PORT || 4242;
-
-// 1. CORS Configuration
-app.use(cors());
-
-// 2. Webhooks Route (Registered BEFORE express.json() because St/**
- * OG Trophy Husband - Production Express Server
- *
- * Standalone, self-hosted backend replacing Shopify.
- * Connects directly to:
- * - Stripe (Hosted Checkout + Webhooks)
- * - Printful (REST API POD automated fulfillment)
- */
+/*/
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
