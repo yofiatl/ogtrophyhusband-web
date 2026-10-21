@@ -1,68 +1,108 @@
-const PRODUCTS = {
-  'dad-hat': {
-    id: 'dad-hat',
-    name: 'OG Trophy Husband full logo - "Out of Office" Dad Hat',
+const PRODUCTS = [
+  {
+    id: "dad-hat-out-of-office",
+    name: "OG Trophy Husband \"Out of Office\" Dad Hat",
     price: 44.44,
-    sync_variant_id: 4268153101,
-    description: 'The YP Classics Dad Hat with antique buckle closure and full logo embroidery.',
-    image: '/images/dad-hat.png'
+    description: "Unstructured low-profile dad hat featuring embroidered \"Out of Office\" and classic OG Trophy Husband logo.",
+    category: "Dad Hats",
+    image: "/images/dad-hat-out-of-office.png",
+    colors: [
+      { name: "Black", hex: "#111111", image: "/images/dad-hat-out-of-office.png" },
+      { name: "Navy", hex: "#1b2a4a", image: "/images/dad-hat-out-of-office-navy.png" },
+      { name: "Khaki", hex: "#c2b280", image: "/images/dad-hat-out-of-office-khaki.png" },
+      { name: "Stone", hex: "#d3d3d3", image: "/images/dad-hat-out-of-office-stone.png" }
+    ]
   },
-  'the-clean-living-dad-hat': {
-    id: 'the-clean-living-dad-hat',
-    name: 'OGTH logo "Clean Living" Dad Hat',
+  {
+    id: "stealth-black-full-logo",
+    name: "Stealth Black Full Logo Hat",
     price: 44.44,
-    sync_variant_id: 4268153102,
-    description: '100% organic cotton unstructured low-profile dad hat with OGTH logo.',
-    image: '/images/clean-living-dad-hat.png'
+    description: "Matte black finish with full OG Trophy Husband crest embroidered in tonal black thread.",
+    category: "Stealth Series",
+    image: "/images/stealth-black-full-logo.png",
+    colors: [
+      { name: "Black", hex: "#0a0a0a", image: "/images/stealth-black-full-logo.png" },
+      { name: "Charcoal", hex: "#2b2b2b", image: "/images/stealth-black-full-logo-charcoal.png" },
+      { name: "Dark Grey", hex: "#444444", image: "/images/stealth-black-full-logo-grey.png" }
+    ]
   },
-  'classic-trucker-cap-1': {
-    id: 'classic-trucker-cap-1',
-    name: 'OGTH logo - Signature 5-Panel',
+  {
+    id: "stealth-black-ogth-logo",
+    name: "Stealth Black OGTH Logo Hat",
     price: 44.44,
-    sync_variant_id: 4268153103,
-    description: 'Structured 5-panel design with flat bill and adjustable snapback.',
-    image: '/images/signature-5-panel-logo.png'
+    description: "Sleek all-black cap with embroidered minimalist OGTH initials on front panel.",
+    category: "Stealth Series",
+    image: "/images/stealth-black-ogth-logo.png",
+    colors: [
+      { name: "Black", hex: "#000000", image: "/images/stealth-black-ogth-logo.png" },
+      { name: "Charcoal", hex: "#333333", image: "/images/stealth-black-ogth-logo-charcoal.png" }
+    ]
   },
-  'the-og-trophy-husband-signature-5-panel': {
-    id: 'the-og-trophy-husband-signature-5-panel',
-    name: 'OG Trophy Husband full logo - Signature 5-Panel',
+  {
+    id: "retro-trucker-full-logo",
+    name: "Retro Trucker Full Logo Hat",
     price: 44.44,
-    sync_variant_id: 4268153104,
-    description: 'Structured 5-panel hat featuring full OG Trophy Husband crest.',
-    image: '/images/signature-5-panel-full.png'
+    description: "Classic breathable mesh snapback trucker hat with full OG Trophy Husband shield logo.",
+    category: "Trucker Hats",
+    image: "/images/retro-trucker-full-logo.png",
+    colors: [
+      { name: "Black/White", hex: "#222222", image: "/images/retro-trucker-full-logo.png" },
+      { name: "Navy/White", hex: "#1e3a8a", image: "/images/retro-trucker-full-logo-navy.png" },
+      { name: "Brown/Khaki", hex: "#78350f", image: "/images/retro-trucker-full-logo-brown.png" }
+    ]
   },
-  'retro-trucker-cap-1': {
-    id: 'retro-trucker-cap-1',
-    name: 'OG Trophy Husband full logo - Retro Trucker',
+  {
+    id: "retro-trucker-ogth-logo",
+    name: "Retro Trucker OGTH Logo Hat",
     price: 44.44,
-    sync_variant_id: 4268153105,
-    description: 'Iconic Yupoong 6606 chassis structured mid-profile fit with full logo.',
-    image: '/images/retro-trucker-full.png'
+    description: "Structured mesh-back trucker cap with clean OGTH front patch.",
+    category: "Trucker Hats",
+    image: "/images/retro-trucker-ogth-logo.png",
+    colors: [
+      { name: "Black/White", hex: "#111111", image: "/images/retro-trucker-ogth-logo.png" },
+      { name: "Charcoal/Black", hex: "#374151", image: "/images/retro-trucker-ogth-logo-charcoal.png" }
+    ]
   },
-  'retro-trucker-cap': {
-    id: 'retro-trucker-cap',
-    name: 'OGTH logo - Retro Trucker',
+  {
+    id: "signature-5-panel-full-logo",
+    name: "Signature 5-Panel Full Logo Hat",
     price: 44.44,
-    sync_variant_id: 4268153106,
-    description: 'Structured mid-profile Yupoong 6606 cap with OGTH logo.',
-    image: '/images/retro-trucker-logo.png'
+    description: "Low-profile 5-panel camper style hat featuring the full OG Trophy Husband logo.",
+    category: "5-Panel Hats",
+    image: "/images/signature-5-panel-full-logo.png",
+    colors: [
+      { name: "Black", hex: "#0f172a", image: "/images/signature-5-panel-full-logo.png" },
+      { name: "Olive", hex: "#3f6212", image: "/images/signature-5-panel-full-logo-olive.png" },
+      { name: "Navy", hex: "#1e1b4b", image: "/images/signature-5-panel-full-logo-navy.png" }
+    ]
   },
-  'snapback-hat-1': {
-    id: 'snapback-hat-1',
-    name: "OG Trophy Husband full logo - Limited edition 'Stealth Black'",
+  {
+    id: "signature-5-panel-ogth-logo",
+    name: "Signature 5-Panel OGTH Logo Hat",
     price: 44.44,
-    sync_variant_id: 4268153107,
-    description: "Special Edition high-profile snapback in Stealth Black with full logo.",
-    image: '/images/stealth-black-full.png'
+    description: "Modern flat-brim 5-panel cap with minimalist OGTH embroidery.",
+    category: "5-Panel Hats",
+    image: "/images/signature-5-panel-ogth-logo.png",
+    colors: [
+      { name: "Black", hex: "#18181b", image: "/images/signature-5-panel-ogth-logo.png" },
+      { name: "Olive", hex: "#4d7c0f", image: "/images/signature-5-panel-ogth-logo-olive.png" },
+      { name: "Grey", hex: "#6b7280", image: "/images/signature-5-panel-ogth-logo-grey.png" }
+    ]
   },
-  'snapback-hat': {
-    id: 'snapback-hat',
-    name: "OGTH logo - Limited edition 'Stealth Black'",
+  {
+    id: "clean-living-dad-hat",
+    name: "Clean Living Dad Hat",
     price: 44.44,
-    sync_variant_id: 4268153108,
-    description: "Special Edition high-profile snapback in Stealth Black with OGTH logo.",
-    image: '/images/stealth-black-logo.png'
+    description: "100% organic cotton relaxed unstructured dad hat with Clean Living OGTH emblem.",
+    category: "Dad Hats",
+    image: "/images/clean-living-dad-hat.png",
+    colors: [
+      { name: "Natural", hex: "#f5f5dc", image: "/images/clean-living-dad-hat.png" },
+      { name: "Stone", hex: "#e5e7eb", image: "/images/clean-living-dad-hat-stone.png" },
+      { name: "Sage", hex: "#84a98c", image: "/images/clean-living-dad-hat-sage.png" },
+      { name: "Black", hex: "#000000", image: "/images/clean-living-dad-hat-black.png" }
+    ]
   }
-};
+];
 
 module.exports = PRODUCTS;
