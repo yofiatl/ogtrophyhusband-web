@@ -1,854 +1,128 @@
 <!DOCTYPE html>
-<html lang="en" class="dark scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OG Trophy Husband | The Total Package</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            gold: '#D4AF37',
-            'gold-light': '#F3E5AB',
-            'gold-dark': '#AA7C11',
-            dark: '#0A0A0C',
-            'dark-card': '#121216',
-            'dark-border': '#22222A'
-          },
-          fontFamily: {
-            cinzel: ['Cinzel', 'serif'],
-            montserrat: ['Montserrat', 'sans-serif']
-          }<!DOCTYPE html>
-<html lang="en" class="dark scroll-smooth">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OG Trophy Husband | The Total Package</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            gold: '#D4AF37',
-            'gold-light': '#F3E5AB',
-            'gold-dark': '#AA7C11',
-            dark: '#0A0A0C',
-            'dark-card': '#121216',
-            'dark-border': '#22222A'
-          },
-          fontFamily: {
-            cinzel: ['Cinzel', 'serif'],
-            montserrat: ['Montserrat', 'sans-serif']
-          }
-        }
-      }
-    }
-  </script>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Montserrat', sans-serif; background-color: #0A0A0C; color: #E5E7EB; }
-    h1, h2, h3, .font-cinzel { font-family: 'Cinzel', serif; }
-    .gold-gradient { background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #AA7C11 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    .gold-bg { background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #AA7C11 100%); }
-    .gold-border { border-color: #D4AF37; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background-color: #0A0A0C; color: #E2E8F0; font-family: system-ui, -apple-system, sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
+    header { border-bottom: 1px solid #22222A; background-color: #121216; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 40; }
+    .gold-text { background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #AA7C11 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 800; }
+    main { max-width: 1280px; margin: 0 auto; padding: 2.5rem 1rem; width: 100%; flex-grow: 1; }
+    .title-sec { text-align: center; margin-bottom: 3rem; }
+    .title-sec h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .title-sec p { color: #A1A1AA; font-size: 1rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+    .card { background: #121216; border: 1px solid #22222A; border-radius: 0.75rem; padding: 1.25rem; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s ease; }
+    .card:hover { border-color: rgba(212,175,55,0.5); transform: translateY(-2px); }
+    .img-box { width: 100%; height: 12rem; background: #0A0A0C; border-radius: 0.5rem; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid #22222A; }
+    .img-box img { width: 100%; height: 100%; object-fit: contain; }
+    .cat { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; margin-bottom: 0.25rem; }
+    .card-title { font-weight: 700; font-size: 1.125rem; color: #FFF; margin-bottom: 0.5rem; }
+    .desc { color: #A1A1AA; font-size: 0.75rem; margin-bottom: 1rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .colors-sec { margin-bottom: 1rem; }
+    .colors-label { font-size: 0.75rem; color: #A1A1AA; display: block; margin-bottom: 0.25rem; }
+    .colors-label span { color: #FFF; font-weight: 500; }
+    .swatches { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .swatch { width: 1.5rem; height: 1.5rem; border-radius: 50%; border: 1px solid #22222A; cursor: pointer; transition: transform 0.2s; }
+    .swatch:hover { transform: scale(1.15); }
+    .card-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid #22222A; }
+    .price { font-size: 1.25rem; font-weight: 800; }
+    .btn-qv { padding: 0.375rem 0.75rem; background: rgba(212,175,55,0.1); color: #D4AF37; font-size: 0.75rem; font-weight: 600; border-radius: 0.5rem; border: 1px solid rgba(212,175,55,0.3); cursor: pointer; }
+    .btn-qv:hover { background: rgba(212,175,55,0.2); }
+    .modal-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); backdrop-filter: blur(4px); z-index: 50; display: flex; align-items: center; justify-content: center; padding: 1rem; }
+    .modal-overlay.hidden { display: none; }
+    .modal-card { background: #121216; border: 1px solid #22222A; border-radius: 0.75rem; max-width: 600px; width: 100%; padding: 1.5rem; position: relative; }
+    .close-btn { position: absolute; top: 0.75rem; right: 1rem; background: none; border: none; color: #A1A1AA; font-size: 1.5rem; cursor: pointer; }
+    .btn-add { width: 100%; padding: 0.75rem; background: #D4AF37; color: #000; font-weight: 800; border-radius: 0.5rem; border: none; cursor: pointer; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 1rem; }
   </style>
 </head>
-<body class="bg-dark text-gray-200 antialiased min-h-screen flex flex-col">
-
-  <!-- Top Announcement Bar -->
-  <div class="bg-gold text-black text-xs font-bold py-2 text-center tracking-widest uppercase shadow-md">
-    Veteran Owned • God • Family • Country • Free Shipping on all orders
-  </div>
-
-  <!-- Sticky Header -->
-  <header class="sticky top-0 z-50 bg-dark/90 backdrop-blur-md border-b border-dark-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      <div class="flex items-center space-x-3">
-        <a href="#" class="text-2xl font-bold tracking-wider font-cinzel gold-gradient uppercase">
-          OG Trophy Husband
-        </a>
-      </div>
-      <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wider uppercase">
-        <a href="#catalog" class="hover:text-gold transition-colors">Catalog</a>
-        <a href="#about" class="hover:text-gold transition-colors">About Us</a>
-        <a href="#contact" class="hover:text-gold transition-colors">Contact</a>
-      </nav>
-      <div class="flex items-center space-x-4">
-        <button id="cart-btn" class="relative p-2 text-gray-300 hover:text-gold transition-colors">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
-          </svg>
-          <span id="cart-count" class="absolute -top-1 -right-1 bg-gold text-black text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">0</span>
-        </button>
-      </div>
-    </div>
+<body>
+  <header>
+    <div class="gold-text" style="font-size:1.5rem;">OG TROPHY HUSBAND</div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="relative bg-gradient-to-b from-dark to-dark-card py-24 border-b border-dark-border overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight font-cinzel mb-6">
-        Earning the Title <span class="gold-gradient">Every Single Day</span>
-      </h1>
-      <p class="max-w-2xl mx-auto text-lg text-gray-400 mb-8 font-light">
-        Premium apparel crafted for men who take pride in providing, protecting, and standing tall for family & country.
-      </p>
-      <a href="#catalog" class="inline-block gold-bg text-black font-bold uppercase tracking-wider px-8 py-4 rounded-md hover:opacity-90 transition-opacity shadow-lg">
-        Shop Official Collection
-      </a>
+  <main id="products">
+    <div class="title-sec">
+      <h1 class="gold-text">OG Trophy Husband Headwear</h1>
+      <p>Premium luxury headwear engineered for unmatched style, comfort, and distinction.</p>
     </div>
-  </section>
-
-  <!-- Catalog Section -->
-  <main id="catalog" class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-bold font-cinzel gold-gradient uppercase tracking-wide">Official Gear</h2>
-      <p class="text-gray-400 mt-2">Live inventory synced directly from Printful POD</p>
-    </div>
-
-    <!-- Product Grid -->
-    <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Dynamically populated -->
-      <div class="col-span-full text-center py-12 text-gray-400">
-        Loading catalog...
-      </div>
-    </div>
+    <div id="product-grid" class="grid"></div>
   </main>
 
-  <!-- Cart Modal / Slide-out -->
-  <div id="cart-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex justify-end">
-    <div class="w-full max-w-md bg-dark-card h-full p-6 flex flex-col border-l border-dark-border">
-      <div class="flex justify-between items-center mb-6">
-        <h3 class="text-xl font-bold font-cinzel gold-gradient uppercase">Your Cart</h3>
-        <button id="close-cart" class="text-gray-400 hover:text-white text-2xl">&times;</button>
-      </div>
-
-      <div id="cart-items" class="flex-grow overflow-y-auto space-y-4">
-        <!-- Cart items inserted here -->
-      </div>
-
-      <div class="border-t border-dark-border pt-4 mt-4">
-        <div class="flex justify-between text-lg font-bold mb-4">
-          <span>Total</span>
-          <span id="cart-total" class="gold-gradient">$0.00</span>
-        </div>
-        <button id="checkout-btn" class="w-full gold-bg text-black font-bold py-3 uppercase tracking-wider rounded hover:opacity-90 transition-opacity">
-          Proceed to Checkout
-        </button>
-      </div>
+  <div id="quickview-modal" class="modal-overlay hidden">
+    <div class="modal-card">
+      <button id="close-modal" class="close-btn">&times;</button>
+      <div id="modal-content-inner" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;"></div>
     </div>
   </div>
-
-  <!-- Footer -->
-  <footer class="bg-dark-card border-t border-dark-border py-8 text-center text-xs text-gray-500">
-    <p>&copy; 2026 OG Trophy Husband. All rights reserved. Veteran Owned & Operated.</p>
-  </footer>
 
   <script>
-    let catalog = [];
-    let cart = [];
-    let selectedVariants = {};
-
-    async function loadProducts() {
-      try {
-        const res = await fetch('/api/products');
-        const data = await res.json();
-        catalog = data.products || [];
-        renderCatalog();
-      } catch (err) {
-        console.error('Failed to load products:', err);
-        document.getElementById('product-grid').innerHTML = `
-          <div class="col-span-full text-center text-red-500">
-            Failed to load products. Please refresh.
-          </div>
-        `;
-      }
-    }
-
-    function renderCatalog() {
-      const grid = document.getElementById('product-grid');
-      if (!catalog || catalog.length === 0) {
-        grid.innerHTML = `<div class="col-span-full text-center text-gray-400">No products available at this time.</div>`;
-        return;
-      }
-
-      grid.innerHTML = catalog.map(product => {
-        const variants = product.variants || [];
-        const hasVariants = variants.length > 0;
-        
-        if (hasVariants && !selectedVariants[product.id]) {
-          selectedVariants[product.id] = variants[0];
-        }
-
-        const activeVariant = selectedVariants[product.id] || (hasVariants ? variants[0] : null);
-        const displayImage = activeVariant && activeVariant.image ? activeVariant.image : (product.thumbnail || 'https://via.placeholder.com/400?text=OG+Hat');
-        const displayPrice = activeVariant ? `$${parseFloat(activeVariant.price).toFixed(2)}` : '$32.00';
-
-        return `
-          <div class="bg-dark-card border border-dark-border rounded-lg overflow-hidden flex flex-col shadow-lg transition-transform hover:-translate-y-1">
-            <div class="relative bg-black/40 aspect-square overflow-hidden flex items-center justify-center p-4">
-              <img id="product-img-${product.id}" src="${displayImage}" alt="${product.name}" class="object-cover w-full h-full rounded-md transition-all duration-300">
-            </div>
-            
-            <div class="p-6 flex flex-col flex-grow">
-              <h3 class="text-lg font-bold font-cinzel text-gray-100 mb-2">${product.name}</h3>
-              <p id="product-price-${product.id}" class="text-xl font-extrabold gold-gradient mb-4">${displayPrice}</p>
-
-              ${hasVariants ? `
-                <div class="mb-4">
-                  <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2">Select Color Variant:</label>
-                  <div class="flex flex-wrap gap-2">
-                    ${variants.map(v => {
-                      const isSelected = activeVariant && activeVariant.id === v.id;
-                      return `
-                        <button 
-                          onclick="selectVariant(${product.id}, ${v.id})"
-                          class="px-3 py-1 text-xs rounded border transition-all ${
-                            isSelected 
-                              ? 'border-gold bg-gold/10 text-gold font-bold shadow' 
-                              : 'border-dark-border bg-dark text-gray-400 hover:border-gray-500'
-                          }"
-                        >
-                          ${v.color || v.name}
-                        </button>
-                      `;
-                    }).join('')}
-                  </div>
-                </div>
-              ` : ''}
-
-              <div class="mt-auto pt-4">
-                <button 
-                  onclick="addToCart(${product.id})"
-                  class="w-full gold-bg text-black font-bold py-2 px-4 rounded uppercase text-sm tracking-wider hover:opacity-90 transition-opacity"
-                >
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-        `;
-      }).join('');
-    }
-
-    function selectVariant(productId, variantId) {
-      const product = catalog.find(p => p.id === productId);
-      if (!product) return;
-      const variant = product.variants.find(v => v.id === variantId);
-      if (!variant) return;
-
-      selectedVariants[productId] = variant;
-      
-      const imgEl = document.getElementById(`product-img-${productId}`);
-      if (imgEl && variant.image) {
-        imgEl.src = variant.image;
-      }
-
-      const priceEl = document.getElementById(`product-price-${productId}`);
-      if (priceEl && variant.price) {
-        priceEl.textContent = `$${parseFloat(variant.price).toFixed(2)}`;
-      }
-
-      renderCatalog();
-    }
-
-    function addToCart(productId) {
-      const product = catalog.find(p => p.id === productId);
-      if (!product) return;
-
-      const variant = selectedVariants[productId] || (product.variants && product.variants[0]);
-      
-      const cartItem = {
-        product_id: product.id,
-        variant_id: variant ? variant.id : null,
-        name: product.name,
-        color: variant ? variant.color : 'Default',
-        price: variant ? variant.price : 32.00,
-        image: variant && variant.image ? variant.image : product.thumbnail,
-        quantity: 1
-      };
-
-      const existingIndex = cart.findIndex(ci => ci.product_id === cartItem.product_id && ci.variant_id === cartItem.variant_id);
-      if (existingIndex > -1) {
-        cart[existingIndex].quantity += 1;
-      } else {
-        cart.push(cartItem);
-      }
-
-      updateCartUI();
-      openCart();
-    }
-
-    function updateCartUI() {
-      const cartCount = document.getElementById('cart-count');
-      const cartItems = document.getElementById('cart-items');
-      const cartTotal = document.getElementById('cart-total');
-
-      const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-      cartCount.textContent = totalItems;
-
-      if (cart.length === 0) {
-        cartItems.innerHTML = `<p class="text-gray-400 text-center py-8">Your cart is empty.</p>`;
-        cartTotal.textContent = '$0.00';
-        return;
-      }
-
-      let total = 0;
-      cartItems.innerHTML = cart.map((item, index) => {
-        const itemTotal = item.price * item.quantity;
-        total += itemTotal;
-        return `
-          <div class="flex items-center space-x-4 bg-dark p-3 rounded border border-dark-border">
-            <img src="${item.image}" alt="${item.name}" class="w-12 h-12 object-cover rounded">
-            <div class="flex-grow">
-              <h4 class="text-sm font-bold text-gray-200">${item.name}</h4>
-              <p class="text-xs text-gray-400">Color: ${item.color}</p>
-              <p class="text-xs gold-gradient font-bold">$${parseFloat(item.price).toFixed(2)} x ${item.quantity}</p>
-            </div>
-            <button onclick="removeFromCart(${index})" class="text-red-400 hover:text-red-300 text-sm">&times;</button>
-          </div>
-        `;
-      }).join('');
-
-      cartTotal.textContent = `$${total.toFixed(2)}`;
-    }
-
-    function removeFromCart(index) {
-      cart.splice(index, 1);
-      updateCartUI();
-    }
-
-    function openCart() {
-      document.getElementById('cart-modal').classList.remove('hidden');
-    }
-
-    function closeCart() {
-      document.getElementById('cart-modal').classList.add('hidden');
-    }
-
-    document.getElementById('cart-btn').addEventListener('click', openCart);
-    document.getElementById('close-cart').addEventListener('click', closeCart);
-
-    document.getElementById('checkout-btn').addEventListener('click', async () => {
-      if (cart.length === 0) return alert('Your cart is empty.');
-      try {
-        const res = await fetch('/api/create-checkout-session', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ items: cart })
-        });
-        const data = await res.json();
-        if (data.url) {
-          window.location.href = data.url;
-        } else {
-          alert('Checkout failed: ' + (data.error || 'Unknown error'));
-        }
-      } catch (err) {
-        console.error('Checkout error:', err);
-        alert('Failed to initiate checkout.');
-      }
-    });
-
-    loadProducts();
-  </script>
-</body>
-</html>
-        }
-      }
-    }
-  </script>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Montserrat', sans-serif; background-color: #0A0A0C; color: #E5E7EB; }
-    h1, h2, h3, .font-cinzel { font-family: 'Cinzel', serif; }
-    .gold-gradient { background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #AA7C11 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    .gold-bg { background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #AA7C11 100%); }
-    .gold-border { border-color: #D4AF37; }
-  </style>
-</head>
-<body class="bg-dark text-gray-200 antialiased min-h-screen flex flex-col">
-
-  <!-- Top Announcement Bar -->
-  <div class="bg-gold text-black text-xs font-bold py-2 text-center tracking-widest uppercase shadow-md">
-    Veteran Owned • God • Family • Country • Free Shipping on all orders
-  </div>
-
-  <!-- Sticky Header -->
-  <header class="sticky top-0 z-40 bg-dark/95 backdrop-blur border-b border-dark-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      <a href="#" class="flex items-center space-x-2">
-        <span class="font-cinzel font-black text-2xl tracking-wider gold-gradient">OG TROPHY HUSBAND</span>
-      </a>
-      <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wider">
-        <a href="#catalog" class="hover:text-gold transition">Catalog</a>
-        <a href="#spotlight" class="hover:text-gold transition">Limited Edition</a>
-        <a href="#videos" class="hover:text-gold transition">Videos & Story</a>
-        <a href="#about" class="hover:text-gold transition">About Us</a>
-        <a href="#pipeline" class="hover:text-gold transition text-gold">Printful + Stripe</a>
-      </nav>
-      <button onclick="toggleCart()" class="relative p-2 text-gray-300 hover:text-gold transition">
-        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
-        <span id="cart-count" class="absolute -top-1 -right-1 bg-gold text-black text-xs font-black rounded-full h-5 w-5 flex items-center justify-center">0</span>
-      </button>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="relative py-24 px-4 bg-gradient-to-b from-dark via-dark-card to-dark border-b border-dark-border overflow-hidden">
-    <div class="max-w-5xl mx-auto text-center relative z-10">
-      <span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold tracking-widest bg-gold/10 text-gold border border-gold/30 mb-6 uppercase">
-        Fall 2026 'Stealth Black' Drop
-      </span>
-      <h1 class="text-5xl md:text-7xl font-black tracking-tight mb-6 text-white uppercase">
-        The Total <span class="gold-gradient">Package</span>
-      </h1>
-      <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10">
-        Premium gear engineered for men who lead with faith, protect their families, and honor their country. Veteran Owned. Always Ready.
-      </p>
-      <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a href="#catalog" class="gold-bg text-black font-bold px-8 py-4 rounded-md hover:brightness-110 transition uppercase tracking-wider text-sm shadow-lg shadow-gold/20">
-          Shop The Collection
-        </a>
-        <a href="#videos" class="border border-gold text-gold font-bold px-8 py-4 rounded-md hover:bg-gold/10 transition uppercase tracking-wider text-sm">
-          Watch The Anthem
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Spotlight Section -->
-  <section id="spotlight" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-dark-border">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-bold gold-gradient uppercase mb-2">Fall 2026 'Stealth Black' Spotlight</h2>
-      <p class="text-gray-400 text-sm">Limited production run. Crafted with high-density embroidered insignia.</p>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="bg-dark-card border border-dark-border rounded-xl p-6 hover:border-gold/50 transition">
-        <div class="h-64 bg-black rounded-lg flex items-center justify-center mb-6 relative overflow-hidden border border-gray-800">
-          <span class="absolute top-3 left-3 bg-gold text-black text-xs font-bold px-2.5 py-1 rounded">LIMITED</span>
-          <div class="text-center">
-            <div class="text-6xl mb-2">🧢</div>
-            <div class="text-xs text-gold font-mono uppercase tracking-widest">Stealth Black Dad Hat</div>
-          </div>
-        </div>
-        <h3 class="text-xl font-bold text-white mb-2">Stealth Black Dad Hat</h3>
-        <p class="text-gray-400 text-sm mb-4">Unstructured low-profile 6-panel with custom matte black buckle.</p>
-        <div class="flex items-center justify-between">
-          <span class="text-2xl font-bold text-gold">$44.44</span>
-          <button onclick="quickView(1)" class="gold-bg text-black font-bold px-4 py-2 rounded text-xs uppercase hover:brightness-110">Quick View</button>
-        </div>
-      </div>
-      <div class="bg-dark-card border border-dark-border rounded-xl p-6 hover:border-gold/50 transition">
-        <div class="h-64 bg-black rounded-lg flex items-center justify-center mb-6 relative overflow-hidden border border-gray-800">
-          <span class="absolute top-3 left-3 bg-gold text-black text-xs font-bold px-2.5 py-1 rounded">LIMITED</span>
-          <div class="text-center">
-            <div class="text-6xl mb-2">🧢</div>
-            <div class="text-xs text-gold font-mono uppercase tracking-widest">Stealth Black Retro Trucker</div>
-          </div>
-        </div>
-        <h3 class="text-xl font-bold text-white mb-2">Stealth Black Retro Trucker</h3>
-        <p class="text-gray-400 text-sm mb-4">Structured mid-profile with breathable premium black mesh backing.</p>
-        <div class="flex items-center justify-between">
-          <span class="text-2xl font-bold text-gold">$44.44</span>
-          <button onclick="quickView(3)" class="gold-bg text-black font-bold px-4 py-2 rounded text-xs uppercase hover:brightness-110">Quick View</button>
-        </div>
-      </div>
-      <div class="bg-dark-card border border-dark-border rounded-xl p-6 hover:border-gold/50 transition">
-        <div class="h-64 bg-black rounded-lg flex items-center justify-center mb-6 relative overflow-hidden border border-gray-800">
-          <span class="absolute top-3 left-3 bg-gold text-black text-xs font-bold px-2.5 py-1 rounded">LIMITED</span>
-          <div class="text-center">
-            <div class="text-6xl mb-2">🧢</div>
-            <div class="text-xs text-gold font-mono uppercase tracking-widest">Stealth Black 5-Panel Cap</div>
-          </div>
-        </div>
-        <h3 class="text-xl font-bold text-white mb-2">Stealth Black 5-Panel Cap</h3>
-        <p class="text-gray-400 text-sm mb-4">Modern low-profile street crown with nylon strap closure.</p>
-        <div class="flex items-center justify-between">
-          <span class="text-2xl font-bold text-gold">$44.44</span>
-          <button onclick="quickView(5)" class="gold-bg text-black font-bold px-4 py-2 rounded text-xs uppercase hover:brightness-110">Quick View</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Interactive Product Catalog Grid -->
-  <section id="catalog" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-dark-border">
-    <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
-      <div>
-        <h2 class="text-3xl md:text-4xl font-bold gold-gradient uppercase mb-2">Full Catalog</h2>
-        <p class="text-gray-400 text-sm">Synchronized with Printful On-Demand Print Fulfillment pipeline.</p>
-      </div>
-      <div class="flex flex-wrap gap-2" id="filter-buttons">
-        <button onclick="filterCatalog('All')" class="filter-btn active bg-gold text-black px-4 py-2 rounded text-xs font-bold uppercase">All Styles</button>
-        <button onclick="filterCatalog('Stealth Black')" class="filter-btn bg-dark-card border border-dark-border text-gray-300 px-4 py-2 rounded text-xs font-bold uppercase hover:border-gold">Stealth Black</button>
-        <button onclick="filterCatalog('Dad Hat')" class="filter-btn bg-dark-card border border-dark-border text-gray-300 px-4 py-2 rounded text-xs font-bold uppercase hover:border-gold">Dad Hats</button>
-        <button onclick="filterCatalog('Retro Trucker')" class="filter-btn bg-dark-card border border-dark-border text-gray-300 px-4 py-2 rounded text-xs font-bold uppercase hover:border-gold">Retro Truckers</button>
-        <button onclick="filterCatalog('5-Panel')" class="filter-btn bg-dark-card border border-dark-border text-gray-300 px-4 py-2 rounded text-xs font-bold uppercase hover:border-gold">5-Panels</button>
-      </div>
-    </div>
-
-    <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <!-- Dynamic Products populated via JS -->
-    </div>
-  </section>
-
-  <!-- Featured Video & Story Showcase Section -->
-  <section id="videos" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-dark-border">
-    <div class="text-center mb-10">
-      <h2 class="text-3xl md:text-4xl font-bold gold-gradient uppercase mb-2">Featured Videos & Story</h2>
-      <p class="text-gray-400 text-sm">Experience the lifestyle of the Total Package.</p>
-    </div>
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-      <div class="lg:col-span-2 bg-dark-card border border-dark-border rounded-xl p-4">
-        <div class="aspect-video w-full rounded-lg overflow-hidden bg-black">
-          <iframe id="youtube-player" class="w-full h-full" src="https://www.youtube.com/embed/HE2h19iZ5BA" title="OG Trophy Husband Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="space-y-3">
-        <h3 class="text-sm font-bold text-gold uppercase tracking-wider mb-2">Video Playlist</h3>
-        <button onclick="playVideo('HE2h19iZ5BA')" class="playlist-btn w-full text-left p-3 rounded-lg bg-dark-card border border-gold text-white font-semibold text-xs flex items-center justify-between">
-          <span>1) Official Anthem Full Video</span>
-          <span class="text-gold">▶</span>
-        </button>
-        <button onclick="playVideo('eZa5O-J0YkA')" class="playlist-btn w-full text-left p-3 rounded-lg bg-dark-card border border-dark-border text-gray-300 hover:border-gold font-semibold text-xs flex items-center justify-between">
-          <span>2) Part 3: Soccer Coach & F1 Racer</span>
-          <span class="text-gold">▶</span>
-        </button>
-        <button onclick="playVideo('byRHGSSf8aM')" class="playlist-btn w-full text-left p-3 rounded-lg bg-dark-card border border-dark-border text-gray-300 hover:border-gold font-semibold text-xs flex items-center justify-between">
-          <span>3) Part 2: King of Kitchen & Brownies</span>
-          <span class="text-gold">▶</span>
-        </button>
-        <button onclick="playVideo('T4DxSaF2skg')" class="playlist-btn w-full text-left p-3 rounded-lg bg-dark-card border border-dark-border text-gray-300 hover:border-gold font-semibold text-xs flex items-center justify-between">
-          <span>4) Part 1: 5 AM Gym, Espresso & Laundry</span>
-          <span class="text-gold">▶</span>
-        </button>
-        <button onclick="playVideo('C2CCMqC3n-o')" class="playlist-btn w-full text-left p-3 rounded-lg bg-dark-card border border-dark-border text-gray-300 hover:border-gold font-semibold text-xs flex items-center justify-between">
-          <span>5) Part 4: Date Night & Family Pool Day</span>
-          <span class="text-gold">▶</span>
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Lifestyle & About Us Section -->
-  <section id="about" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-dark-border">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-bold gold-gradient uppercase mb-2">A Day in the Life of the Total Package</h2>
-      <p class="text-gray-400 text-sm">Faith, Discipline, Family, and Excellence in every detail.</p>
-    </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-      <div class="bg-dark-card p-6 rounded-xl border border-dark-border text-center">
-        <div class="text-4xl mb-3">🏋️‍♂️</div>
-        <h3 class="text-lg font-bold text-white mb-2">5 AM Discipline</h3>
-        <p class="text-xs text-gray-400">Gym, double espresso, and handling laundry before the household wakes.</p>
-      </div>
-      <div class="bg-dark-card p-6 rounded-xl border border-dark-border text-center">
-        <div class="text-4xl mb-3">🍳</div>
-        <h3 class="text-lg font-bold text-white mb-2">Kitchen King</h3>
-        <p class="text-xs text-gray-400">Gourmet breakfasts, homemade brownies, and mastering family meals.</p>
-      </div>
-      <div class="bg-dark-card p-6 rounded-xl border border-dark-border text-center">
-        <div class="text-4xl mb-3">🏎️</div>
-        <h3 class="text-lg font-bold text-white mb-2">Coach & Driver</h3>
-        <p class="text-xs text-gray-400">Silver Odyssey F1 racer carpools and coaching youth soccer victories.</p>
-      </div>
-      <div class="bg-dark-card p-6 rounded-xl border border-dark-border text-center">
-        <div class="text-4xl mb-3">✨</div>
-        <h3 class="text-lg font-bold text-white mb-2">Date Night Leader</h3>
-        <p class="text-xs text-gray-400">Always dressed sharply, family pool days, and leading with devotion.</p>
-      </div>
-    </div>
-
-    <!-- Veteran Owned Section -->
-    <div class="bg-gradient-to-r from-dark-card via-black to-dark-card p-8 md:p-12 rounded-2xl border border-gold/30 text-center max-w-4xl mx-auto">
-      <span class="text-gold font-bold text-xs uppercase tracking-widest block mb-2">Our Foundation</span>
-      <h3 class="text-2xl md:text-3xl font-bold text-white uppercase mb-4">Veteran Owned & Operated</h3>
-      <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
-        OG Trophy Husband was built on the core pillars of God, Family, and Country. We believe in taking pride in being a protector, provider, and partner. Every piece of headwear is designed to represent those who give their all every single day.
-      </p>
-    </div>
-  </section>
-
-  <!-- Architecture Pipeline Simulator Section -->
-  <section id="pipeline" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-10">
-      <h2 class="text-3xl md:text-4xl font-bold gold-gradient uppercase mb-2">Printful & Stripe Pipeline Architecture</h2>
-      <p class="text-gray-400 text-sm">Interactive overview of how orders flow from store to Stripe Checkout and Printful Dispatch.</p>
-    </div>
-    <div class="bg-dark-card border border-dark-border p-6 rounded-xl">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-        <div class="p-4 bg-dark rounded-lg border border-gray-800">
-          <div class="text-gold font-bold text-sm mb-1">1. Storefront</div>
-          <p class="text-xs text-gray-400">Cart items mapped to Printful <code class="text-gold font-mono">sync_variant_ids</code></p>
-        </div>
-        <div class="p-4 bg-dark rounded-lg border border-gray-800">
-          <div class="text-gold font-bold text-sm mb-1">2. Stripe Checkout</div>
-          <p class="text-xs text-gray-400"><code class="text-gold font-mono">POST /api/create-checkout-session</code> creates live session or test response</p>
-        </div>
-        <div class="p-4 bg-dark rounded-lg border border-gray-800">
-          <div class="text-gold font-bold text-sm mb-1">3. Printful Webhook</div>
-          <p class="text-xs text-gray-400">Fulfills order automatically on payment success event</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="mt-auto bg-black border-t border-dark-border py-8 text-center text-xs text-gray-500">
-    <p>© 2026 OG Trophy Husband. All rights reserved. Veteran Owned • God • Family • Country</p>
-  </footer>
-
-  <!-- Quick View Modal -->
-  <div id="quick-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-    <div class="bg-dark-card border border-gold/40 rounded-xl max-w-lg w-full p-6 relative">
-      <button onclick="closeQuickView()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl">✕</button>
-      <div id="modal-content">
-        <!-- Filled by JS -->
-      </div>
-    </div>
-  </div>
-
-  <!-- Shopping Cart Slide-over Drawer -->
-  <div id="cart-drawer" class="fixed inset-y-0 right-0 w-full max-w-md bg-dark-card border-l border-dark-border z-50 transform translate-x-full transition-transform duration-300 flex flex-col">
-    <div class="p-6 border-b border-dark-border flex items-center justify-between">
-      <h3 class="text-xl font-bold gold-gradient uppercase">Your Shopping Cart</h3>
-      <button onclick="toggleCart()" class="text-gray-400 hover:text-white text-xl">✕</button>
-    </div>
-    <div id="cart-items" class="flex-1 overflow-y-auto p-6 space-y-4">
-      <!-- Cart items injected here -->
-    </div>
-    <div class="p-6 border-t border-dark-border bg-dark">
-      <div class="flex justify-between items-center mb-4 text-lg font-bold">
-        <span>Total:</span>
-        <span id="cart-total" class="text-gold">$0.00</span>
-      </div>
-      <button onclick="openCheckoutModal()" class="w-full gold-bg text-black font-bold py-3 rounded text-sm uppercase tracking-wider hover:brightness-110">
-        Proceed to Checkout
-      </button>
-    </div>
-  </div>
-
-  <!-- Checkout Payload Modal -->
-  <div id="checkout-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-    <div class="bg-dark-card border border-gold/40 rounded-xl max-w-xl w-full p-6 relative">
-      <button onclick="closeCheckoutModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl">✕</button>
-      <h3 class="text-2xl font-bold gold-gradient uppercase mb-4">Checkout & Dispatch Payload</h3>
-      <div id="checkout-status" class="text-xs text-gray-300 mb-4">Connecting to Stripe / Printful API...</div>
-      <pre id="checkout-payload" class="bg-black p-4 rounded text-xs text-gold font-mono overflow-x-auto max-h-80 border border-gray-800">
-Processing order request...
-      </pre>
-      <div class="mt-4 flex justify-end">
-        <button onclick="closeCheckoutModal()" class="border border-gold text-gold font-bold px-4 py-2 rounded text-xs uppercase hover:bg-gold/10">Close</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- JavaScript Logic -->
-  <script>
-    const fallbackProducts = [
-      { id: 1, name: "Stealth Black Dad Hat", category: "Stealth Black", price: 44.44, style: "Dad Hat", desc: "Unstructured low-profile 6-panel with custom matte black buckle.", colorways: ["Matte Black", "Monochrome Gold"], sync_variant_ids: [1001, 1002] },
-      { id: 2, name: "Classic Dad Hat", category: "Dad Hat", price: 44.44, style: "Dad Hat", desc: "100% washed cotton twill with embroidered crest.", colorways: ["Navy", "Charcoal", "Olive"], sync_variant_ids: [1003, 1004, 1005] },
-      { id: 3, name: "Stealth Black Retro Trucker", category: "Stealth Black", price: 44.44, style: "Retro Trucker", desc: "Structured mid-profile with premium black mesh backing.", colorways: ["All Black"], sync_variant_ids: [1006] },
-      { id: 4, name: "Classic Retro Trucker", category: "Retro Trucker", price: 44.44, style: "Retro Trucker", desc: "Vintage trucker mesh cap with high-density gold stitch.", colorways: ["Black/White", "Navy/White"], sync_variant_ids: [1007, 1008] },
-      { id: 5, name: "Stealth Black 5-Panel Cap", category: "Stealth Black", price: 44.44, style: "5-Panel", desc: "Modern low-profile street crown with nylon strap closure.", colorways: ["Pitch Black"], sync_variant_ids: [1009] },
-      { id: 6, name: "Classic 5-Panel Cap", category: "5-Panel", price: 44.44, style: "5-Panel", desc: "Breathable cotton canvas 5-panel camper style cap.", colorways: ["Camo", "Dark Green"], sync_variant_ids: [1010, 1011] },
-      { id: 7, name: "Stealth Black Tactical Operator", category: "Stealth Black", price: 44.44, style: "Tactical", desc: "Hook-and-loop morale patch front with moisture-wicking sweatband.", colorways: ["Tactical Black"], sync_variant_ids: [1012] },
-      { id: 8, name: "Premium Vintage Washed Cap", category: "Dad Hat", price: 44.44, style: "Dad Hat", desc: "Distressed vintage heavy-wash dad hat with gold insignia.", colorways: ["Vintage Black", "Washed Olive"], sync_variant_ids: [1013, 1014] }
+    const DEFAULT_PRODUCTS = [
+      { id: "dad-hat-out-of-office", name: "OG Trophy Husband \"Out of Office\" Dad Hat", price: 44.44, description: "Unstructured low-profile dad hat featuring embroidered \"Out of Office\" and classic OG Trophy Husband logo.", category: "Dad Hats", image: "/images/dad-hat-out-of-office.png", colors: [{ name: "Black", hex: "#111111" }, { name: "Navy", hex: "#1b2a4a" }, { name: "Khaki", hex: "#c2b280" }, { name: "Stone", hex: "#d3d3d3" }] },
+      { id: "stealth-black-full-logo", name: "Stealth Black Full Logo Hat", price: 44.44, description: "Matte black finish with full OG Trophy Husband crest embroidered in tonal black thread.", category: "Stealth Series", image: "/images/stealth-black-full-logo.png", colors: [{ name: "Black", hex: "#0a0a0a" }, { name: "Charcoal", hex: "#2b2b2b" }, { name: "Dark Grey", hex: "#444444" }] },
+      { id: "stealth-black-ogth-logo", name: "Stealth Black OGTH Logo Hat", price: 44.44, description: "Sleek all-black cap with embroidered minimalist OGTH initials on front panel.", category: "Stealth Series", image: "/images/stealth-black-ogth-logo.png", colors: [{ name: "Black", hex: "#000000" }, { name: "Charcoal", hex: "#333333" }] },
+      { id: "retro-trucker-full-logo", name: "Retro Trucker Full Logo Hat", price: 44.44, description: "Classic breathable mesh snapback trucker hat with full OG Trophy Husband shield logo.", category: "Trucker Hats", image: "/images/retro-trucker-full-logo.png", colors: [{ name: "Black/White", hex: "#222222" }, { name: "Navy/White", hex: "#1e3a8a" }, { name: "Brown/Khaki", hex: "#78350f" }] },
+      { id: "retro-trucker-ogth-logo", name: "Retro Trucker OGTH Logo Hat", price: 44.44, description: "Structured mesh-back trucker cap with clean OGTH front patch.", category: "Trucker Hats", image: "/images/retro-trucker-ogth-logo.png", colors: [{ name: "Black/White", hex: "#111111" }, { name: "Charcoal/Black", hex: "#374151" }] },
+      { id: "signature-5-panel-full-logo", name: "Signature 5-Panel Full Logo Hat", price: 44.44, description: "Low-profile 5-panel camper style hat featuring the full OG Trophy Husband logo.", category: "5-Panel Hats", image: "/images/signature-5-panel-full-logo.png", colors: [{ name: "Black", hex: "#0f172a" }, { name: "Olive", hex: "#3f6212" }, { name: "Navy", hex: "#1e1b4b" }] },
+      { id: "signature-5-panel-ogth-logo", name: "Signature 5-Panel OGTH Logo Hat", price: 44.44, description: "Modern flat-brim 5-panel cap with minimalist OGTH embroidery.", category: "5-Panel Hats", image: "/images/signature-5-panel-ogth-logo.png", colors: [{ name: "Black", hex: "#18181b" }, { name: "Olive", hex: "#4d7c0f" }, { name: "Grey", hex: "#6b7280" }] },
+      { id: "clean-living-dad-hat", name: "Clean Living Dad Hat", price: 44.44, description: "100% organic cotton relaxed unstructured dad hat with Clean Living OGTH emblem.", category: "Dad Hats", image: "/images/clean-living-dad-hat.png", colors: [{ name: "Natural", hex: "#f5f5dc" }, { name: "Stone", hex: "#e5e7eb" }, { name: "Sage", hex: "#84a98c" }, { name: "Black", hex: "#000000" }] }
     ];
 
-    let products = [...fallbackProducts];
-    let cart = [];
+    function createHatSvg(colorHex, name) {
+      return 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect width="400" height="300" fill="%23121216"/><path d="M 80 180 C 80 100, 320 100, 320 180 Z" fill="' + encodeURIComponent(colorHex) + '" stroke="%23D4AF37" stroke-width="3"/><path d="M 60 180 Q 200 210 340 180 Q 200 170 60 180 Z" fill="' + encodeURIComponent(colorHex) + '" stroke="%23D4AF37" stroke-width="2"/><ellipse cx="200" cy="110" rx="6" ry="4" fill="%23D4AF37"/><circle cx="200" cy="145" r="22" fill="%231A1A20" stroke="%23D4AF37" stroke-width="2"/><text x="200" y="150" font-family="sans-serif" font-size="11" font-weight="bold" fill="%23D4AF37" text-anchor="middle">OGTH</text><text x="200" y="250" font-family="sans-serif" font-size="12" fill="%23A1A1AA" text-anchor="middle">' + encodeURIComponent(name) + '</text></svg>';
+    }
+
+    let allProducts = [];
 
     async function loadProducts() {
       try {
         const res = await fetch('/api/products');
-        if (res.ok) {
+        if(res.ok) {
           const data = await res.json();
-          if (Array.isArray(data) && data.length > 0) products = data;
-        }
-      } catch (e) {
-        console.log('Using fallback products');
-      }
-      renderGrid(products);
+          allProducts = data.products || DEFAULT_PRODUCTS;
+        } else { allProducts = DEFAULT_PRODUCTS; }
+      } catch(e) { allProducts = DEFAULT_PRODUCTS; }
+      renderProducts();
     }
 
-    function renderGrid(items) {
+    function renderProducts() {
       const grid = document.getElementById('product-grid');
-      grid.innerHTML = items.map(p => `
-        <div class="bg-dark-card border border-dark-border rounded-xl p-5 hover:border-gold/40 transition flex flex-col justify-between">
-          <div>
-            <div class="h-48 bg-black rounded-lg flex items-center justify-center mb-4 border border-gray-800 relative">
-              <span class="text-4xl">🧢</span>
-              <span class="absolute bottom-2 right-2 text-[10px] bg-dark text-gold border border-gold/30 px-2 py-0.5 rounded font-mono">${p.style}</span>
-            </div>
-            <h3 class="font-bold text-white text-base mb-1">${p.name}</h3>
-            <p class="text-gray-400 text-xs mb-3 line-clamp-2">${p.desc}</p>
-          </div>
-          <div class="mt-4 flex items-center justify-between border-t border-dark-border pt-3">
-            <span class="text-xl font-bold text-gold">$${p.price.toFixed(2)}</span>
-            <button onclick="quickView(${p.id})" class="gold-bg text-black font-bold px-3 py-1.5 rounded text-xs uppercase hover:brightness-110">View</button>
-          </div>
-        </div>
-      `).join('');
-    }
-
-    function filterCatalog(cat) {
-      document.querySelectorAll('.filter-btn').forEach(b => {
-        b.classList.remove('bg-gold', 'text-black');
-        b.classList.add('bg-dark-card', 'text-gray-300');
-      });
-      event.target.classList.remove('bg-dark-card', 'text-gray-300');
-      event.target.classList.add('bg-gold', 'text-black');
-
-      if (cat === 'All') renderGrid(products);
-      else renderGrid(products.filter(p => p.category.includes(cat) || p.style.includes(cat)));
-    }
-
-    function quickView(id) {
-      const p = products.find(x => x.id === id);
-      if (!p) return;
-      const modal = document.getElementById('quick-modal');
-      const content = document.getElementById('modal-content');
-      
-      content.innerHTML = `
-        <div class="text-center mb-4">
-          <div class="text-6xl mb-2">🧢</div>
-          <h3 class="text-2xl font-bold text-white uppercase">${p.name}</h3>
-          <p class="text-gold font-bold text-xl my-1">$${p.price.toFixed(2)}</p>
-          <p class="text-gray-400 text-xs">${p.desc}</p>
-        </div>
-        <div class="mb-4">
-          <label class="block text-xs font-bold text-gray-300 uppercase mb-2">Select Colorway</label>
-          <select id="modal-colorway" class="w-full bg-dark border border-gold/40 text-white rounded p-2 text-xs">
-            ${p.colorways.map((c, i) => `<option value="${c}" data-variant="${p.sync_variant_ids[i] || p.sync_variant_ids[0]}">${c}</option>`).join('')}
-          </select>
-        </div>
-        <button onclick="addToCartFromModal(${p.id})" class="w-full gold-bg text-black font-bold py-3 rounded text-xs uppercase tracking-wider hover:brightness-110">
-          Add To Cart
-        </button>
-      `;
-      modal.classList.remove('hidden');
-    }
-
-    function closeQuickView() {
-      document.getElementById('quick-modal').classList.add('hidden');
-    }
-
-    function addToCartFromModal(id) {
-      const p = products.find(x => x.id === id);
-      const select = document.getElementById('modal-colorway');
-      const colorway = select.value;
-      const variantId = select.options[select.selectedIndex].dataset.variant;
-
-      const existing = cart.find(item => item.id === id && item.colorway === colorway);
-      if (existing) {
-        existing.qty += 1;
-      } else {
-        cart.push({ id: p.id, name: p.name, price: p.price, colorway, sync_variant_id: Number(variantId), qty: 1 });
-      }
-      updateCartUI();
-      closeQuickView();
-      toggleCart(true);
-    }
-
-    function updateCartUI() {
-      const count = cart.reduce((sum, item) => sum + item.qty, 0);
-      document.getElementById('cart-count').innerText = count;
-
-      const cartContainer = document.getElementById('cart-items');
-      if (cart.length === 0) {
-        cartContainer.innerHTML = `<p class="text-gray-500 text-xs text-center py-8">Your cart is empty.</p>`;
-        document.getElementById('cart-total').innerText = '$0.00';
-        return;
-      }
-
-      let total = 0;
-      cartContainer.innerHTML = cart.map((item, index) => {
-        total += item.price * item.qty;
-        return `
-          <div class="bg-dark p-3 rounded border border-dark-border flex items-center justify-between">
-            <div>
-              <h4 class="text-xs font-bold text-white">${item.name}</h4>
-              <span class="text-[10px] text-gold font-mono">${item.colorway} (Variant #${item.sync_variant_id})</span>
-              <div class="text-xs text-gray-400 mt-1">$${item.price} x ${item.qty}</div>
-            </div>
-            <button onclick="removeFromCart(${index})" class="text-red-400 hover:text-red-300 text-xs">Remove</button>
-          </div>
-        `;
+      grid.innerHTML = allProducts.map(p => {
+        const activeColor = p.colors && p.colors.length > 0 ? p.colors[0] : { name: 'Standard', hex: '#111' };
+        const svgImg = createHatSvg(activeColor.hex, p.name);
+        return '<div class="card" id="card-' + p.id + '"><div><div class="img-box"><img id="img-' + p.id + '" src="' + svgImg + '" alt="' + p.name + '" /></div><div class="cat gold-text">' + (p.category || 'Headwear') + '</div><h3 class="card-title">' + p.name + '</h3><p class="desc">' + p.description + '</p></div><div><div class="colors-sec"><span class="colors-label">Color: <span id="color-label-' + p.id + '">' + activeColor.name + '</span></span><div class="swatches">' + (p.colors || []).map(c => '<button type="button" onclick="selectColor(\'' + p.id + '\', \'' + c.name + '\', \'' + c.hex + '\')" class="swatch" style="background-color: ' + c.hex + ';" title="' + c.name + '"></button>').join('') + '</div></div><div class="card-footer"><span class="price gold-text">$' + parseFloat(p.price).toFixed(2) + '</span><button type="button" onclick="openQuickView(\'' + p.id + '\')" class="btn-qv">Quick View</button></div></div></div>';
       }).join('');
-      document.getElementById('cart-total').innerText = `$${total.toFixed(2)}`;
     }
 
-    function removeFromCart(index) {
-      cart.splice(index, 1);
-      updateCartUI();
+    function selectColor(productId, colorName, colorHex) {
+      const imgEl = document.getElementById('img-' + productId);
+      const labelEl = document.getElementById('color-label-' + productId);
+      const p = allProducts.find(item => item.id === productId);
+      if(imgEl) imgEl.src = createHatSvg(colorHex, p ? p.name : '');
+      if(labelEl) labelEl.textContent = colorName;
     }
 
-    function toggleCart(forceOpen) {
-      const drawer = document.getElementById('cart-drawer');
-      if (forceOpen) drawer.classList.remove('translate-x-full');
-      else drawer.classList.toggle('translate-x-full');
+    function openQuickView(productId) {
+      const p = allProducts.find(item => item.id === productId);
+      if(!p) return;
+      const activeColor = p.colors && p.colors.length > 0 ? p.colors[0] : { name: 'Standard', hex: '#111' };
+      const modalInner = document.getElementById('modal-content-inner');
+      modalInner.innerHTML = '<div class="img-box" style="height:14rem;"><img id="modal-img" src="' + createHatSvg(activeColor.hex, p.name) + '" /></div><div style="display:flex; flex-direction:column; justify-content:space-between;"><div class="cat gold-text">' + (p.category || 'Headwear') + '</div><h2 style="font-size:1.5rem; font-weight:700; margin-bottom:0.5rem; color:#FFF;">' + p.name + '</h2><p class="price gold-text" style="font-size:1.5rem; margin-bottom:1rem;">$' + parseFloat(p.price).toFixed(2) + '</p><p style="font-size:0.875rem; color:#D1D5DB; margin-bottom:1rem;">' + p.description + '</p><div class="colors-sec"><span class="colors-label">Select Color: <span id="modal-color-label">' + activeColor.name + '</span></span><div class="swatches">' + (p.colors || []).map(c => '<button type="button" onclick="selectModalColor(\'' + p.name + '\', \'' + c.name + '\', \'' + c.hex + '\')" class="swatch" style="background-color: ' + c.hex + ';" title="' + c.name + '"></button>').join('') + '</div></div><button type="button" onclick="alert(\'Added ' + p.name + ' to bag!\')" class="btn-add">Add To Bag</button></div>';
+      document.getElementById('quickview-modal').classList.remove('hidden');
     }
 
-    function playVideo(id) {
-      document.getElementById('youtube-player').src = `https://www.youtube.com/embed/${id}`;
+    function selectModalColor(productName, colorName, colorHex) {
+      document.getElementById('modal-img').src = createHatSvg(colorHex, productName);
+      document.getElementById('modal-color-label').textContent = colorName;
     }
 
-    async function openCheckoutModal() {
-      if (cart.length === 0) {
-        alert('Cart is empty!');
-        return;
-      }
-      const modal = document.getElementById('checkout-modal');
-      const payloadEl = document.getElementById('checkout-payload');
-      const statusEl = document.getElementById('checkout-status');
+    document.getElementById('close-modal').onclick = () => {
+      document.getElementById('quickview-modal').classList.add('hidden');
+    };
 
-      modal.classList.remove('hidden');
-      statusEl.innerText = 'Posting checkout payload to /api/create-checkout-session...';
-      payloadEl.innerText = 'Connecting...';
-
-      const payload = {
-        items: cart.map(i => ({
-          sync_variant_id: i.sync_variant_id,
-          quantity: i.qty,
-          name: i.name,
-          colorway: i.colorway,
-          price: i.price
-        })),
-        success_url: window.location.origin + '/?success=true',
-        cancel_url: window.location.origin + '/?cancel=true'
-      };
-
-      try {
-        const res = await fetch('/api/create-checkout-session', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload)
-        });
-        const data = await res.json();
-        if (data.url) {
-          statusEl.innerText = 'Redirecting to Stripe Checkout...';
-          window.location.href = data.url;
-        } else {
-          statusEl.innerText = 'Stripe Test Mode Response / Printful Dispatch Payload Simulated:';
-          payloadEl.innerText = JSON.stringify({ status: 'Simulated Dispatch Success', stripe_session: 'mock_session_id_12345', printful_order_payload: payload, response: data }, null, 2);
-        }
-      } catch (e) {
-        statusEl.innerText = 'Demo Mode Execution (Printful + Stripe simulated payload):';
-        payloadEl.innerText = JSON.stringify({ status: 'Simulated Order Success', printful_order_dispatch: payload }, null, 2);
-      }
-    }
-
-    function closeCheckoutModal() {
-      document.getElementById('checkout-modal').classList.add('hidden');
-    }
-
-    loadProducts();
+    window.onload = loadProducts;
   </script>
 </body>
 </html>
