@@ -102,4 +102,6 @@ const PRODUCTS = [
   }
 ];
 
-module.exports = PRODUCTS;
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = PRODUCTS;
+}
